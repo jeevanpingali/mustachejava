@@ -49,7 +49,10 @@ public class Example {
 
     private static int count = 0;
     public Function<Object, Object> count() {
-        return ((obj) -> count = Integer.parseInt((String) obj));
+        return (obj -> {
+            count = Integer.parseInt((String) obj);
+            return "";
+        });
     }
 
     public String comma() {
