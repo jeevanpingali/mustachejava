@@ -58,7 +58,6 @@ public class Example {
             String key = st.nextToken();
             count = Integer.parseInt(st.nextToken());
             counts.put(key, count);
-            System.out.println(counts);
             return "";
         });
     }

@@ -1,8 +1,6 @@
 {{#items}}
     Name: {{name}}
     Price: {{price}}
-    {{#count}}f1:{{features.size}}{{/count}}
-    {{> feature}}
-    {{#count}}f2:{{anotherFeatures.size}}{{/count}}
-    {{> anotherFeature}}
+    {{#count}}f1:{{features.size}}{{/count}}{{> feature}}
+    {{#count}}f2:{{anotherFeatures.size}}{{/count}}{{> anotherFeature}}
 {{/items}}
